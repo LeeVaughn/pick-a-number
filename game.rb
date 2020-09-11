@@ -1,7 +1,11 @@
-puts "test"
+high_score = 0
 
 # welcome player to the game
+puts "Welcome to the Pick a Number game!"
 # show the current high score if the player is playing again
+if high_score != 0
+  puts "The current high score is #{high_score}. Can you beat it?"
+end
 
 # generate a random number within a certain range
 
