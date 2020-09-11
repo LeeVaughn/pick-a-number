@@ -8,8 +8,9 @@ if high_score != 0
 end
 
 # generate a random number within a certain range
-
+number = rand(10) + 1
 # create a variable to track the number of guesses
+guesses = 0
 
 # prompt use to guess a number
   # convert guess to a number
