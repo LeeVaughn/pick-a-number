@@ -1,3 +1,5 @@
+puts "test"
+
 # welcome player to the game
 # show the current high score if the player is playing again
 
