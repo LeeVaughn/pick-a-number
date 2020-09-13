@@ -13,8 +13,13 @@ number = rand(10) + 1
 guesses = 0
 
 # prompt use to guess a number
-  # convert guess to a number
-  # inform the user if their input is a non-number
+print "Please guess a number between 1 and 10: "
+guess = gets.to_i
+
+while guess.between?(1, 10) === false
+  print "That input is invalid. Please guess a number between 1 and 10: "
+  guess = gets.to_i
+end
 
 # while guessed number does not equal random number
   # let the player know if their guess is outside the number range
