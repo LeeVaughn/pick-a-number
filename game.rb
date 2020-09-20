@@ -13,6 +13,7 @@ number = rand(10) + 1
 # create a variable to track the number of guesses
 guesses = 0
 
+# https://stackoverflow.com/questions/59701247/ruby-while-loop-keeps-repeating-regardless-of-input
 loop do
   # prompt use to guess a number
   print "Please guess a number between 1 and 10: "
