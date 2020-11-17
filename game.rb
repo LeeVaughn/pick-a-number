@@ -17,27 +17,23 @@ loop do
   # prompt user to guess a number
   print "Please guess a number between 1 and 10: "
   guess = gets.to_i
+  # increment the counter variable
+  counter += 1
 
   if guess == number
+    high_score = counter
     puts "Correct!"
     break
   end
 
   if guess.between?(1, 10) == false
-    print "That input is invalid. Please guess a number between 1 and 10: "
+    print "That input is invalid. "
     # guess = gets.to_i
-  end
-
-  # # display "It's lower" if the guess is too high
-  if guess > number
+  elsif guess > number
     puts "The number is lower."
-  end
-  # # display "It's higher" if the guess is too low
-  if guess < number
+  elsif guess < number
     puts "The number is higher."
   end
-  # # increment the counter variable
-  counter += 1
 
   # Let the player know how many guesses it took
   # ask the player if they would like to play again
